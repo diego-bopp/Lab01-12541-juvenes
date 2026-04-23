@@ -1,7 +1,7 @@
 
 resource "docker_container" "api" {
-  name = "api-${terraform.workspace}"
-  imagen = "chlab/api"
+  name  = "api-${terraform.workspace}"
+  image = "chlab/api"
 
  ports {
     internal = "3000"
@@ -12,7 +12,7 @@ resource "docker_container" "api" {
 
 resource "docker_container" "web" {
   name = "web-${terraform.workspace}"
-  imagen = "chlab/web"
+  image = "chlab/web"
 
 
  ports {

@@ -1,2 +1,3 @@
-variable "api-port" {}
-variable "web-port" {}
+variable "api_port" {}
+variable "web_port" {}
+
